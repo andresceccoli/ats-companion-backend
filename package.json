@@ -1,0 +1,36 @@
+{
+  "name": "ats-companion-backend",
+  "version": "1.0.0",
+  "description": "Companion app for American Truck Simulator navigation - backend components",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "npx tsx src/index.ts",
+    "prestart": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andresceccoli/ats-companion-backend.git"
+  },
+  "author": "Andres Ceccoli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andresceccoli/ats-companion-backend/issues"
+  },
+  "homepage": "https://github.com/andresceccoli/ats-companion-backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "mongoose": "^8.11.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.5",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3"
+  }
+}
